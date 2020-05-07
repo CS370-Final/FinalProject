@@ -10,5 +10,5 @@ trishaespejo@gmail.com <p>
 Richard Lomax -
 richard.lomax98@qmail.cuny.edu
 
-Click link below for project specs and UML:
+Click link below for project specs and UML: <p>
 https://drive.google.com/drive/u/1/folders/1iyT490CLKH6Ek2z99Ties_xrUYaJeujy
