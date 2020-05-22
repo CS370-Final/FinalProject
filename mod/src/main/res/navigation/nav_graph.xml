@@ -14,6 +14,9 @@
         <action
             android:id="@+id/action_FirstFragment_to_SecondFragment"
             app:destination="@id/SecondFragment" />
+        <action
+            android:id="@+id/action_FirstFragment_to_Question"
+            app:destination="@id/Question" />
     </fragment>
     <fragment
         android:id="@+id/SecondFragment"
@@ -23,6 +26,26 @@
 
         <action
             android:id="@+id/action_SecondFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/Question"
+        android:name="edu.cuny.qcc.cs.mod.Question"
+        android:label="@string/question_label"
+        tools:layout="@layout/question">
+
+        <action
+            android:id="@+id/action_Question_to_Summary"
+            app:destination="@id/Summary" />
+    </fragment>
+    <fragment
+        android:id="@+id/Summary"
+        android:name="edu.cuny.qcc.cs.mod.Summary"
+        android:label="@string/question_label"
+        tools:layout="@layout/question">
+
+        <action
+            android:id="@+id/action_Summary_to_FirstFragment"
             app:destination="@id/FirstFragment" />
     </fragment>
 </navigation>
