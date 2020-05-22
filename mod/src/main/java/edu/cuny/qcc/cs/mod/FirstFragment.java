@@ -89,6 +89,8 @@ public class FirstFragment extends Fragment {
             @Override
             public void onClick(View v) {
                //do soemthing
+                NavHostFragment.findNavController(FirstFragment.this)
+                        .navigate(R.id.action_FirstFragment_to_Question);
                 printToggleButtonStates();
             }
         });
