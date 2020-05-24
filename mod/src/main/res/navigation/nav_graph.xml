@@ -5,6 +5,20 @@
     android:id="@+id/nav_graph"
     app:startDestination="@id/FirstFragment">
 
+
+    <fragment
+        android:id="@+id/Assessment"
+        android:name="edu.cuny.qcc.cs.mod.Assessment"
+        android:label="@string/assessment_label"
+        tools:layout="@layout/assessment">
+
+        <action
+            android:id="@+id/action_Assessment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+        <action
+            android:id="@+id/action_Assessment_to_Question"
+            app:destination="@id/Question" />
+    </fragment>
     <fragment
         android:id="@+id/FirstFragment"
         android:name="edu.cuny.qcc.cs.mod.FirstFragment"
@@ -17,6 +31,9 @@
         <action
             android:id="@+id/action_FirstFragment_to_Question"
             app:destination="@id/Question" />
+        <action
+            android:id="@+id/action_FirstFragment_to_Assessment"
+            app:destination="@id/Assessment" />
     </fragment>
     <fragment
         android:id="@+id/SecondFragment"
@@ -27,6 +44,10 @@
         <action
             android:id="@+id/action_SecondFragment_to_FirstFragment"
             app:destination="@id/FirstFragment" />
+        <argument
+            android:name="userId"
+            app:argType="string"
+            android:defaultValue='"-1"' />
     </fragment>
     <fragment
         android:id="@+id/Question"
@@ -37,6 +58,22 @@
         <action
             android:id="@+id/action_Question_to_Summary"
             app:destination="@id/Summary" />
+        <argument
+            android:name="getRank1"
+            app:argType="integer"
+            android:defaultValue="1" />
+        <argument
+            android:name="getRank2"
+            app:argType="integer"
+            android:defaultValue="1" />
+        <argument
+            android:name="getRank3"
+            app:argType="integer"
+            android:defaultValue="1" />
+        <argument
+            android:name="userId"
+            app:argType="string"
+            android:defaultValue='"-1"' />
     </fragment>
     <fragment
         android:id="@+id/Summary"
