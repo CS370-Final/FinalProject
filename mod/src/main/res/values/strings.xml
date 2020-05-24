@@ -17,4 +17,5 @@
     <string name="rank3button">3</string>
     <string name="currentrank">Current Rank: </string>
     <string name="start">Start</string>
+    <string name="assessment_label">Assessment</string>
 </resources>
